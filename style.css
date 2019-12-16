@@ -1,0 +1,41 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    display: inline-block;
+    margin-top: 8rem;
+}
+
+.with-circle {
+    position: absolute;
+    right: 32%;
+    
+}
+
+.with-triangle {
+    position: absolute;
+    left: 32%;
+}
+
+.with-circle::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    right: 40%;
+}
+
+.with-triangle::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -14%;
+    left: 25%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid orange;
+}
